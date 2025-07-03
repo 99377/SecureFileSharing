@@ -1,0 +1,358 @@
+{
+	"info": {
+		"_postman_id": "7535d8b5-fc2f-46ee-ad3e-14255463edc1",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46401388",
+		"_collection_link": "https://winter-star-1057584.postman.co/workspace/Puneet-Kr.'s-Workspace~bdb7f5d7-4cae-4c4a-8157-d21e4c43bdf7/collection/46401388-7535d8b5-fc2f-46ee-ad3e-14255463edc1?action=share&source=collection_link&creator=46401388"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/signup/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"client\",\r\n  \"email\": \"client1@example.com\",\r\n  \"password\": \"yourpassword\",\r\n  \"user_type\": \"client\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/signup/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"signup",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/verify-email/?token=eyJ1c2VyX2lkIjozfQ:1uXMQm:qwy8p7dg3P2V6lwizgUIfu6k9TfI7Zml7a1XduQ9iU4",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/verify-email/?token=eyJ1c2VyX2lkIjozfQ:1uXMQm:qwy8p7dg3P2V6lwizgUIfu6k9TfI7Zml7a1XduQ9iU4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"verify-email",
+						""
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ1c2VyX2lkIjozfQ:1uXMQm:qwy8p7dg3P2V6lwizgUIfu6k9TfI7Zml7a1XduQ9iU4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/signup/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"username\": \"ops\",\r\n    \"email\": \"ops1@example.com\",\r\n    \"password\": \"yourpassword\",\r\n    \"user_type\": \"ops\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/signup/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"signup",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/verify-email/?token=eyJ1c2VyX2lkIjo0fQ:1uXMVS:78Le7827dlO1qADzfXPbprKIGCRoUmVD9W8htFjrSOM",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/verify-email/?token=eyJ1c2VyX2lkIjo0fQ:1uXMVS:78Le7827dlO1qADzfXPbprKIGCRoUmVD9W8htFjrSOM",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"verify-email",
+						""
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "eyJ1c2VyX2lkIjo0fQ:1uXMVS:78Le7827dlO1qADzfXPbprKIGCRoUmVD9W8htFjrSOM"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/login/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n    \"username\": \"client\",\r\n    \"password\": \"yourpassword\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/upload/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"var template = `\r",
+							"<style type=\"text/css\">\r",
+							"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}\r",
+							"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}\r",
+							"    .tftable tr {background-color:#ffffff;}\r",
+							"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}\r",
+							"    .tftable tr:hover {background-color:#e0ffff;}\r",
+							"</style>\r",
+							"\r",
+							"<table class=\"tftable\" border=\"1\">\r",
+							"    <tr>\r",
+							"        <th>Error Field</th>\r",
+							"        <th>Message</th>\r",
+							"    </tr>\r",
+							"    \r",
+							"    {{#each response.file}}\r",
+							"        <tr>\r",
+							"            <td>file</td>\r",
+							"            <td>{{this}}</td>\r",
+							"        </tr>\r",
+							"    {{/each}}\r",
+							"</table>\r",
+							"`;\r",
+							"\r",
+							"function constructVisualizerPayload() {\r",
+							"    var res = pm.response.json();\r",
+							"    \r",
+							"    return {response: res};\r",
+							"}\r",
+							"\r",
+							"pm.visualizer.set(template, constructVisualizerPayload());"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxNTU5MzQ0LCJpYXQiOjE3NTE1NTkwNDQsImp0aSI6IjQ1ZGY5YmI1ODczYjRjOTNiMTc3YTU4ZTY0MmZjZWUwIiwidXNlcl9pZCI6NH0.dVi8AbcLMWcxuiLFncH_binfHf5mH91lupEoIUU-DQw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "fileName",
+							"description": "report",
+							"type": "file",
+							"src": "postman-cloud:///1f057707-8dae-4350-a0b2-fef7e574765a"
+						},
+						{
+							"key": "securefileSharing",
+							"value": "Demo_Project",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/upload/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"upload",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "   http://127.0.0.1:8000/api/files/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxNTU5OTc3LCJpYXQiOjE3NTE1NTk2NzcsImp0aSI6ImUwYTAwMGU1ODBkMDQxMjk4YzBmNjk1Y2ZjMzRmNjgxIiwidXNlcl9pZCI6M30.PdLl9dYR-NqqqVPPWtiAifIQDNkz5VSvq0sMQd2GU7Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/files/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"files",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/generate-download-link/0/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxNTYwMzc0LCJpYXQiOjE3NTE1NjAwNzQsImp0aSI6IjE5M2EyZDQwMWFkYzRjMWZiNjBhYmNmMGNlYjkzZWM1IiwidXNlcl9pZCI6M30.3zakQDcu9yPy2TpXE2dX03wQs8Jl3LLnuysZzgtPB3Y",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/generate-download-link/0/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"generate-download-link",
+						"0",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "  http://127.0.0.1:8000/api/files/0/download/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/files/0/download/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"files",
+						"0",
+						"download",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
